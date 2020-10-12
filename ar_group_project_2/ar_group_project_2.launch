@@ -1,14 +1,14 @@
 <launch>
+
   <arg name="model" default="$(env TURTLEBOT3_MODEL)" doc="model type [burger, waffle, waffle_pi]"/>
   <arg name="x_pos" default="0.5"/>
   <arg name="y_pos" default="4.0"/>
   <arg name="z_pos" default="0.0"/>
   <arg name="yaw" default="-1.0"/>
-  <arg name="debug" value="true"/>
-  <arg name="verbose" value="true" />
 
+  <arg name="verbose" value="true" />
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
-    <arg name="world_name" value="~/asdfads/catkin_ws/src/WallyTheBrick/ar_group_project_2.world"/>
+    <arg name="world_name" value="/home/lachlan/catkin_ws/src/WallyTheBrick/ar_group_project_2/ar_group_project_2.world"/>
     <arg name="paused" value="false"/>
     <arg name="use_sim_time" value="true"/>
     <arg name="gui" value="true"/>
